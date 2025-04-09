@@ -94,13 +94,6 @@ Speech-To-Text/
 
 初始化时会从示例文件创建这些配置文件，您可以根据需要进行修改。
 
-## 文档
-
-详细文档位于`docs/`目录：
-
-- `API.md`：API接口文档
-- `DEVELOPMENT.md`：开发指南
-- `USER_GUIDE.md`：用户使用指南
 
 ## 许可证
 
