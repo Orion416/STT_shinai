@@ -1,0 +1,6 @@
+#!/bin/sh
+# This is a temporary hack until we can figure out what patch we need to apply
+# to the nginx source code to make this unnecessary.
+CWD="$(cd "$(dirname "${0}")" && pwd -P)"
+ROOT_PATH="$(cd "${CWD}/../" && pwd -P)"
+exec ${ROOT_PATH}/sbin/nginx -p "${ROOT_PATH}" "${@}"

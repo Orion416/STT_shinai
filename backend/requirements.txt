@@ -1,0 +1,40 @@
+# STT_Xiaodao 语音转文字系统依赖
+# 更新日期：2024-04-02
+
+# ========== 核心依赖 ==========
+# 语音识别及处理
+faster-whisper==1.1.1
+numpy>=1.19.0
+PyAudio==0.2.14
+sounddevice==0.5.1
+soundfile==0.12.1
+moviepy==1.0.3
+torch>=2.0.0  # 建议手动安装CUDA版本: pip install torch --index-url https://download.pytorch.org/whl/cu121
+
+# Web服务
+flask==2.3.3
+flask-cors==4.0.0
+Werkzeug==2.3.7  # 与Flask兼容的版本
+
+# ========== 工具依赖 ==========
+tqdm>=4.65.0      # 进度条
+requests>=2.31.0  # HTTP请求
+
+# ========== 文件处理 ==========
+ffmpeg-python>=0.2.0  # 音视频处理，适合与moviepy配合使用
+
+# ========== 开发工具 ==========
+python-dotenv>=1.0.0  # 环境变量管理
+pytest>=7.4.0         # 单元测试
+black>=23.7.0         # 代码格式化
+flake8>=6.1.0         # 代码检查
+
+# ========== 系统要求 ==========
+# Python >= 3.10
+# ffmpeg（系统安装）
+# CUDA (可选，推荐用于加速转写)
+# Node.js >= 14 (前端开发需要)
+
+# ========== 安装说明 ==========
+# 1. 在conda环境中安装: conda activate stt_xiaodao && pip install -r requirements.txt
+# 2. 添加GPU支持: pip install torch>=2.0.0 --index-url https://download.pytorch.org/whl/cu121 
